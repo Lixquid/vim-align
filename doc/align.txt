@@ -1,0 +1,13 @@
+*align.txt* Plugin for aligning text.
+
+Author:  Lixquid <http://lixquid.com>
+License: MIT
+
+INTRODUCTION                                    *align*
+
+Align is a plugin for aligning blocks of text relative to the gutter and
+buffer width.
+
+COMMANDS                                        *align-commands*
+
+TODO
