@@ -14,14 +14,14 @@ function! AlignLeft(...)
 	endif
 
 	if getline( "." ) =~ '^\s*$'
-		exe ":normal A " . repeat(
-			\ char,
-			\ width - linewidth - 1
-		\ )
-	else
 		exe ":normal A" . repeat(
 			\ char,
 			\ width - linewidth
+		\ )
+	else
+		exe ":normal A " . repeat(
+			\ char,
+			\ width - linewidth - 1
 		\ )
 	endif
 endfunction
