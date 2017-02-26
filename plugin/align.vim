@@ -45,11 +45,11 @@ function! AlignCenter(...)
 	else
 		exe ":normal A " . repeat(
 			\ char,
-			\ float2nr( floor( ( width + 0.0 - linewidth ) / 2 ) ) - 1
+			\ float2nr( ceil( ( width + 0.0 - linewidth ) / 2 ) ) - 1
 		\ )
 		exe ":normal I" . repeat(
 			\ char,
-			\ float2nr( ceil( ( width + 0.0 - linewidth ) / 2 ) ) - 1
+			\ float2nr( floor( ( width + 0.0 - linewidth ) / 2 ) ) - 1
 		\ ) . " "
 	endif
 endfunction
